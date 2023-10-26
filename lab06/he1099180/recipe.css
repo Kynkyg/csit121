@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+header {
+    background-color: #808080;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#left-column {
+    background-color: #00ff00;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+
+#right-column {
+    background-color: #f34563;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+footer {
+    background-color: #808080;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hyperlink styles */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+#left-column ul li {
+    margin-bottom: 10px;
+
+}
+
+
+#right-column ol {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#right-column ol li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px */
+
+    /* Update the image container to fit smaller screens */
+    .image-container {
+        width: 100%;
+        height: auto; /* Allow the height to adjust automatically */
+    }
+
+    /* Adjust the font size for headings on smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    /* Change the layout to a single column on smaller screens */
+    #main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Add some spacing and padding to improve readability on smaller screens */
+    #left-column,
+    #right-column {
+        padding: 10px;
+    }
+
+    /* Update the footer for smaller screens */
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
