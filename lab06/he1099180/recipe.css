@@ -80,43 +80,32 @@ ul, ol {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    /* Styles for screens with a maximum width of 768px */
-
-    /* Update the image container to fit smaller screens */
-    .image-container {
-        width: 100%;
-        height: auto; /* Allow the height to adjust automatically */
+.image-container {
+        width: 200px;
+        height: 150px;
+        background-image: url('egg.jpg');
+        background-size: cover;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
     }
 
-    /* Adjust the font size for headings on smaller screens */
-    h1 {
-        font-size: 24px;
-    }
+    /* Media Query for screens with a maximum width of 768px (smartphones) */
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px; /* Decrease font size for better readability on small screens */
+        }
 
-    h2 {
-        font-size: 18px;
-    }
+        .image-container {
+            width: 100%; /* Make the image container take the full width of the screen */
+            height: auto; /* Let the height adjust proportionally */
+        }
 
-    h3 {
-        font-size: 16px;
-    }
+        #main-container {
+            display: flex; /* Change the layout to a flexbox for a single column design */
+            flex-direction: column;
+        }
 
-    /* Change the layout to a single column on smaller screens */
-    #main-container {
-        display: flex;
-        flex-direction: column;
+        #left-column, #right-column {
+            width: 100%; /* Make both columns take full width on small screens */
+        }
     }
-
-    /* Add some spacing and padding to improve readability on smaller screens */
-    #left-column,
-    #right-column {
-        padding: 10px;
-    }
-
-    /* Update the footer for smaller screens */
-    footer {
-        text-align: center;
-        padding: 20px;
-    }
-}
