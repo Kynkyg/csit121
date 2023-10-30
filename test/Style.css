@@ -1,0 +1,84 @@
+/* Reset some default styles for better consistency */
+html, body, h1, h2, h3, ul, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #e54d26;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main wrapper */
+#wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the image container */
+.image-container {
+    width: 200px;
+    height: 150px;
+    background-image: url('egg.jpg');
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+/* Style the left column */
+#left-column {
+    width: 50%;
+    float: left;
+}
+
+/* Style the right column */
+#right-column {
+    width: 50%;
+    float: left;
+}
+
+/* Style the ingredients list */
+ul {
+    list-style: none;
+}
+
+/* Style the recipe steps */
+ol {
+    padding-left: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #e54d26;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Add responsive styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Make image container full width on smaller screens */
+    .image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Change left and right column to full width for single-column layout */
+    #left-column, #right-column {
+        width: 100%;
+        float: none;
+    }
+}
