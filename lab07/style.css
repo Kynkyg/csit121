@@ -127,7 +127,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #f5f5f5; /* Alternate row color */
+  background-color: #f5f5f5; 
 }
 
 td {
